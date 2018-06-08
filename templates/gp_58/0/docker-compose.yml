@@ -9,8 +9,8 @@ services:
      networks: 
        - docker_gwbridge
      ports:
-       - "20060:40000"
-       - "20061:40001"
+       - "20080:40000"
+       - "20081:40001"
      volumes:
        - /opt/gpnode3/gpdata_43:/home/gpadmin/gpdata
      privileged: true
