@@ -1,7 +1,7 @@
 version: '2'
 services:
   gpnode3:
-     image: 10.0.0.96:5000/database/gp_43:v1 
+     image: 10.0.0.96:5000/database/gp_581:v2 
      hostname: sdw3
      labels:
       io.rancher.scheduler.global: 'true'
@@ -9,10 +9,10 @@ services:
      networks: 
        - docker_gwbridge
      ports:
-       - "20080:40000"
-       - "20081:40001"
+       - "20079:40000"
+       - "20083:40001"
      volumes:
-       - /opt/gpnode3/gpdata_43:/home/gpadmin/gpdata
+       - /opt/gpnode3/gpdata_581:/home/gpadmin/gpdata
      privileged: true
      tty: true
 
